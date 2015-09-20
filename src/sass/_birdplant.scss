@@ -1,0 +1,58 @@
+body {
+	font-family:helvetica, arial, verdana, sans-serif;
+	padding:0px; margin:0px;
+	background:#5E5766 url(/img/background.png) repeat-x top left;
+	color:#343238;
+}
+a {
+	color:#CFC7DE;
+}
+a:hover {
+	color:#E7DEF7;
+}
+div#content > * {
+	/*border:1px solid blue;*/
+}
+div#main {
+	height:600px;
+	background:url(/img/top_back.jpg) no-repeat top center;
+}
+div#content {
+	width:1000px;
+	margin:0px auto;
+}
+h1 span {
+	display:none;
+}
+p#cc {
+	font-size:80%;
+	line-height:150%;
+}
+
+ul#navigation {
+    width: 707px; height: 54px;
+    background: url(/img/navigation.png);
+    margin: 21px 0px 0px 37px; padding: 0;
+    position: relative;
+}
+ul#navigation li {
+    margin: 0; padding: 0; list-style: none;
+    position: absolute; top: 0;
+}
+ul#navigation li, ul#navigation a {
+    height: 54px; display: block;
+}
+#nav1 {left: 0; width: 150px;}
+#nav2 {left: 150px; width: 145px;}
+#nav3 {left: 295px; width: 115px;}
+#nav4 {left: 410px; width: 145px;}
+#nav5 {left: 555px; width: 152px;}
+#nav1 a:hover {background: transparent url(/img/navigation.png) 0 -54px no-repeat;}
+#nav2 a:hover {background: transparent url(/img/navigation.png) -150px -54px no-repeat;}
+#nav3 a:hover {background: transparent url(/img/navigation.png) -295px -54px no-repeat;}
+#nav4 a:hover {background: transparent url(/img/navigation.png) -410px -54px no-repeat;}
+#nav5 a:hover {background: transparent url(/img/navigation.png) -555px -54px no-repeat;}
+
+div#strip {
+	margin:20px 0px;	
+}
