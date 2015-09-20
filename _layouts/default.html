@@ -1,0 +1,19 @@
+{% include top.html %}
+
+{% assign num = site.pages | size | minus:1 %}
+
+<ul id="navigation">
+	{% if page.strip > 1 %}<li id="nav1"><a href="/1/"></a></li>{% endif %}
+	{% if page.strip > 1 %}<li id="nav2"><a href="/{{ page.strip | minus:1 }}/"></a></li>{% endif %}
+	<li id="nav3"><a id="random" href="/random/"></a></li>
+	{% if page.strip < num %}<li id="nav4"><a href="/{{ page.strip | plus:1 }}/"></a></li>{% endif %} 
+	{% if page.strip < num %}<li id="nav5"><a href="/latest/{{num}}/"></a></li>{% endif %} 
+</ul>
+
+<div id="strip">
+	<img src="/img/strips/{{ page.strip }}.png" height="200" alt="strip 1" />
+</div>
+
+{{ content }}
+
+{% include bottom.html %}

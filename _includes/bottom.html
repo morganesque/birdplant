@@ -1,0 +1,15 @@
+</div>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+var devURL="birdplant.tom";
+if(window.location.hostname==devURL)
+{
+	var js_script = document.createElement('script');
+	js_script.type = "text/javascript";
+	js_script.src = "http://localhost:3000/browser-sync/browser-sync-client.1.9.1.js";
+	js_script.async = true;
+	document.getElementsByTagName('body')[0].appendChild(js_script);
+}
+</script>
